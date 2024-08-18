@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>A24-905</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            html {
+                font-family: sans-serif;
+            }
+            .panelflex {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+
+<body>
+
+<div class="w3-bar w3-dark-gray w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-dark-gray" style="width:25%">A24-905</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-dark-gray" style="width:50%">Introduction à la programmation</a>
+  <a href="https://mathieudupont.github.io/cours" class="w3-bar-item w3-button w3-mobile" style="width:25%" target="_blank">autres cours</a>
+</div>
+
+<div class="w3-container w3-center w3-padding-16">
+    <div class="w3-bar">
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-dark-grey">Cégep</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a target="_blank" href="https://www.cegepmontpetit.ca" class="w3-bar-item w3-button">Accueil</a>
+                <a target="_blank" href="https://www.cegepmontpetit.ca/campus/a-propos-du-campus-de-longueuil/plans" class="w3-bar-item w3-button">Plans du cégep</a>
+                <a target="_blank" href="https://mareussite.cegepmontpetit.ca/cegep/" class="w3-bar-item w3-button">Ma réussite au cégep</a>
+                <a target="_blank" href="https://info.cegepmontpetit.ca" class="w3-bar-item w3-button">Département d'informatique</a>
+            </div>
+        </div>
+        <a target="_blank" href="https://mareussite.cegepmontpetit.ca/cegep/services-du-cegep/" class="w3-bar-item w3-button w3-blue">Services du cégep</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-red">Plagiat</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a target="_blank" href="https://departement-info-cem.github.io/plagiat" class="w3-bar-item w3-button">Cheat sheet!</a>
+                <a target="_blank" href="https://mathieudupont.github.io/cours/docs/Integrite-intellectuelle-Aide-memoire-2020-09-30.pdf" class="w3-bar-item w3-button">Qu'est-ce que le plagiat?</a>
+                <a target="_blank" href="https://mathieudupont.github.io/cours/docs/Integrite-intellectuelle-Quiz-V3.pdf" class="w3-bar-item w3-button">Quiz plagiat</a>
+            </div>
+        </div>
+        <a target="_blank" href="https://www.cegepmontpetit.ca/static/uploaded/Files/Cegep/Pages-flottantes/Calendriers%20scolaires/CalendrierScolaire2024-2025_AdoptionCA29novembre2023_CEM_ENA_Revision12juin2024.pdf" class="w3-bar-item w3-button w3-dark-grey">Calendrier</a>
+        <a target="_blank" href="https://cegepmontpetit.omnivox.ca" class="w3-bar-item w3-button w3-orange">Omnivox</a>
+        <a href="PC_2024H_420-964-EM_Departement-Informatique.pdf" target="_blank" class="w3-bar-item w3-button w3-dark-grey">Plan de cours</a>
+        <a target="_blank" href="https://hub.dectim.ca/faucon/" class="w3-bar-item w3-button w3-green">Faucon</a>
+        <a target="_blank" href="https://dectim.ca" class="w3-bar-item w3-button w3-dark-grey">TIM</a>
+        <a target="_blank" href="https://www.cegepmontpetit.ca/cegep/urgence" class="w3-bar-item w3-button w3-red">Urgence</a>
+    </div>
+</div>
+
+    <button onclick="accordeon('sem1')" class="w3-button w3-block w3-left-align w3-light-green w3-text-black"><b>Semaine 1</b> - Environnement de travail et introduction à JavaScript</button>
+    <div id="sem1" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_1/420905_semaine1.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_1/420905_lab1.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="accordeon('sem2')" class="w3-button w3-block w3-left-align w3-light-green w3-text-black"><b>Semaine 2</b> - Chaînes de caractères, DOM et introduction aux fonctions</button>
+    <div id="sem2" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_2/420905_semaine2.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_2/420905_lab2.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="accordeon('sem3')" class="w3-button w3-block w3-left-align w3-light-green w3-text-black"><b>Semaine 3</b> - Variables globales, évènements, DOM (styles), currentTarget, fonctions avec paramètres</button>
+    <div id="sem3" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_3/420905_semaine3.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_3/420905_lab3.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="accordeon('sem4')" class="w3-button w3-block w3-left-align w3-light-green w3-text-black"><b>Semaine 4</b> - Booléens, conditions et débogage</button>
+    <div id="sem4" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_4/420905_semaine4.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_4/420905_lab4.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="accordeon('sem5')" class="w3-button w3-block w3-left-align w3-light-green w3-text-black"><b>Semaine 5</b> - <b class="w3-orange">Remise TP1 (15%)</b></button>
+    <!-- <div id="sem5" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_5/420905_semaine5.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_5/420905_lab5.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem6')" class="w3-button w3-block w3-left-align w3-light-green w3-text-black"><b>Semaine 6</b> - <b class="w3-orange">Examen 1 (8%)</b></button>
+    <!-- <div id="sem6" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_6/420905_semaine6.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_6/420905_lab6.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem7')" class="w3-button w3-block w3-left-align w3-lime w3-text-black"><b>Semaine 7</b> - DOM (classes et attributs) et boucles</button>
+    <!-- <div id="sem7" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_7/420905_semaine7.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_7/420905_lab7.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button class="w3-button w3-block w3-center w3-white w3-hover-white w3-wide">SEMAINE DE LECTURE</button>
+
+    <button onclick="accordeon('sem8')" class="w3-button w3-block w3-left-align w3-lime w3-text-black"><b>Semaine 8</b> - Tableaux</button>
+    <!-- <div id="sem8" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_8/420905_semaine8.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_8/420905_lab8.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem9')" class="w3-button w3-block w3-left-align w3-lime w3-text-black"><b>Semaine 9</b> - Fonctions avec retour, planificateurs, évènements clavier</button>
+    <!-- <div id="sem9" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_9/420905_semaine9.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_9/420905_lab9.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem10')" class="w3-button w3-block w3-left-align w3-lime w3-text-black"><b>Semaine 10</b> - <b class="w3-orange">Remise TP2 (20%)</b></button>
+    <!-- <div id="sem10" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_10/420905_semaine10.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_10/420905_lab10.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem11')" class="w3-button w3-block w3-left-align w3-lime w3-text-black"><b>Semaine 11</b> - <b class="w3-orange">Examen 2 (12%)</b></button>
+    <!-- <div id="sem11" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_11/420905_semaine11.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_11/420905_lab11.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem12')" class="w3-button w3-block w3-left-align w3-light-blue w3-text-black"><b>Semaine 12</b> - Autres structures de contrôle et création d’éléments HTML</button>
+    <!-- <div id="sem12" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_12/420905_semaine12.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_12/420905_lab12.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem13')" class="w3-button w3-block w3-left-align w3-light-blue w3-text-black"><b>Semaine 13</b> - Fonctions utilitaires et résolution de problèmes</button>
+    <!-- <div id="sem13" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_13/420905_semaine13.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_13/420905_lab13.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem14')" class="w3-button w3-block w3-left-align w3-light-blue w3-text-black"><b>Semaine 14</b> - <b class="w3-orange w3-text-black">Remise TP3 (25%)</b></button>
+    <!-- <div id="sem14" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_14/420905_semaine14.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_14/420905_lab14.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <button onclick="accordeon('sem15')" class="w3-button w3-block w3-left-align w3-light-blue w3-text-black"><b>Semaine 15</b> - <b class="w3-orange w3-text-black">Examen 3 (20%)</b></button>
+    <!-- <div id="sem15" class="w3-container w3-hide">
+        <div class="w3-panel w3-round w3-border panelflex">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-blue" href="semaine_15/420905_semaine15.pdf" target="_blank">Théorie</a></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <p><a class="w3-button w3-round w3-lime" href="semaine_15/420905_lab15.zip" target="_blank">Exercices</a></p>
+            </div>
+        </div>
+    </div> -->
+
+<script>
+function accordeon(id) {
+  let x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
